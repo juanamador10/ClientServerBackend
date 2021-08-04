@@ -27,7 +27,7 @@ async createUser(user:UserEntity){
 }
 
 async updateUser(user:UserEntity){
-    await this.rep.insert(user);
+    await this.rep.update({id:user.id},user);
 }
 
 async deleteUser(user:UserEntity){
