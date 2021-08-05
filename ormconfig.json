@@ -1,15 +1,18 @@
 {
-    "type": "mysql",
-    "host": "localhost",
-    "port": "3306",
-    "username": "root",
-    "password": "1juanito",
-    "database": "nestjsserver",
+    "type": "postgres",
+    "host": "ec2-54-236-137-173.compute-1.amazonaws.com",
+    "port": "5432",
+    "username": "kjhfecjbyzsrkc",
+    "password": "3d56b0b149f4510bc98c5f60cf50512ccbc9ba2620af5bd56498d1fe9448ea96",
+    "database": "desdba28i7bld9",
+    
+    "extra":{
+        "ssl":{
+            "rejectUnauthorized":false
+        }
+    },
     "entities": [
         "dist/**/*.entity{.ts,.js}"
     ],
-    "synchronize": true,
-    "migrations": ["dist/migrations/*{.ts,.js}"],
-    "migrationsTableName": "migrations_typeorm",
-    "migrationsRun": true
+    "synchronize": true
 }
